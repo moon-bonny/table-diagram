@@ -27,7 +27,7 @@ table-diagram用于拖拽生成关系图的业务中，主要有添加节点，�
 | canEdit | 是否可以编辑节点关系 | boolean | true/false | true |
 | canAdd | 是否可以能在该节点上添加子节点 | boolean | true/false | true |
 
-![image.png](https://github.com/moon-bonny/table-diagram/tree/master/src/assets/images/simple-diagram.png "image.png")
+![image.png](https://github.com/moon-bonny/table-diagram/blob/master/src/assets/images/simple-diagram.png)
 
 ```js
 <template>
