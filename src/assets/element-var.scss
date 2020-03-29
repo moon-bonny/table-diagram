@@ -1,0 +1,17 @@
+/* 改变主题色变量 */
+$--color-primary: #15AC8D;
+$--border-color-base: #CAD1E8;
+
+// 按钮/输入框去圆角
+$--border-radius-zero: 0;
+$--button-border-radius: $--border-radius-zero;
+$--button-medium-border-radius: $--border-radius-zero;
+$--button-small-border-radius: $--border-radius-zero;
+$--button-large-border-radius: $--border-radius-zero;
+$--input-border-radius: $--border-radius-zero;
+
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '../../node_modules/element-ui/lib/theme-chalk/fonts';
+
+@import '../../node_modules/element-ui/packages/theme-chalk/src/index';

@@ -1,0 +1,75 @@
+{
+  "name": "table-diagram",
+  "version": "1.0.0",
+  "description": "base on element-ui, vue-draggable",
+  "author": "Moon",
+  "keywords": [
+    "vue",
+    "element-ui",
+    "nuxt",
+    "dashboard"
+  ],
+  "engines": {
+    "npm": ">= 5.2.0"
+  },
+  "scripts": {
+    "dev": "cross-env MODE=dev nuxt",
+    "test": "cross-env MODE=test nuxt",
+    "build": "cross-env MODE=prod nuxt build",
+    "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
+    "release": "gren release --override"
+  },
+  "dependencies": {
+    "@femessage/upload-to-ali": "1.7.0",
+    "@nuxtjs/axios": "^5.0.1",
+    "@nuxtjs/dotenv": "^1.3.0",
+    "dayjs": "^1.7.4",
+    "dotenv": "^6.0.0",
+    "drag-resize-forvue": "^1.0.1",
+    "element-ui": "^2.4.11",
+    "js-cookie": "^2.2.0",
+    "nuxt": "^2.3.2",
+    "vue-clipboard2": "^0.3.0",
+    "vue-drag-resize": "^1.3.2",
+    "vuedraggable": "^2.23.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^0.1.2",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-component": "^1.1.0",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "github-release-notes": "^0.17.0",
+    "husky": "^1.3.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^8.1.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.16.0",
+    "sass-loader": "^8.0.0",
+    "standard-version": "^6.0.1",
+    "stylelint": "^9.10.0",
+    "stylelint-config-standard": "^18.2.0",
+    "terser-webpack-plugin": "^2.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.vue": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
+  }
+}
